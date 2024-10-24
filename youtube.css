@@ -1,0 +1,168 @@
+/* Genel Stil */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+/* Üst Menü (Header) Stili */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: white;
+}
+
+.logo img {
+    height: 30px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search-input {
+    width: 400px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 25px 0 0 25px; /* Kenarları yuvarlatma */
+    outline: none;
+    font-size: 16px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #f1f1f1;
+    border-radius: 0 25px 25px 0; /* Butonun sağ köşelerini yuvarlatma */
+    cursor: pointer;
+    position: absolute;
+    right: 60px; /* Mikrofon simgesi için boşluk bırakıyoruz */
+    top: 0;
+    bottom: 0;
+    color: #555;
+    border-left: 1px solid #ddd;
+}
+
+.search-button img {
+    height: 20px;
+    width: 20px;
+}
+
+.search-button:hover {
+    background-color: #eaeaea;
+}
+
+/* Mikrofon Butonu */
+.mic-button {
+    padding: 10px;
+    border: none;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    bottom: 0;
+    border-left: 1px solid #ddd;
+}
+
+.mic-button img {
+    height: 20px;
+    width: 20px;
+}
+
+.user-menu button {
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Yan Menü (Sidebar) */
+.sidebar {
+    width: 200px;
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    border-right: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #f1f1f1;
+}
+
+/* İçerik Alanı */
+.content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Video Kartları */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.video-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.video-card img {
+    width: 100%;
+    height: auto;
+}
+
+.video-card h3 {
+    font-size: 16px;
+    margin: 10px 10px 0 10px;
+}
+
+.video-card p {
+    font-size: 14px;
+    color: #555;
+    margin: 0 10px 10px 10px;
+}
+
+.video-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
